@@ -22,7 +22,7 @@
 
 </script>
 
-<div class="bg-[#888098]/70 h-[100vh] relative">
+<div class="bg-[#888098]/70 h-[100vh] relative overflow-x-hidden">
     <Navbar></Navbar>
     <!-- <RestaurantFeedItem category="funniness"></RestaurantFeedItem> -->
     <form class="bg-[#888098] w-full flex flex-row p-5 gap-4 items-center">
@@ -45,14 +45,14 @@
         <select bind:value={priceValue} name="price" id="" placeholder="Price" class="text-left bg-[#344055] w-fit h-16 px-5 text-[white] text-2xl rounded-md">
             <option value="Any" class="text-xl"></option>
             <option value="$" class="text-xl">$</option>
-            <option value="$$" class="text-xl">$ $</option>
-            <option value="$$$" class="text-xl">$ $ $</option>
+            <option value="$$" class="text-xl">$$</option>
+            <option value="$$$" class="text-xl">$$$</option>
         </select>
     </form>
     <div class="bg-pink-300">
         {#each categoriesList as cat}
             {#if (cat == categoryValue || categoryValue == "Any")}
-                <RestaurantFeed price={priceValue} category={cat} nameFilter={searchValue}></RestaurantFeed>
+                <RestaurantFeed price={priceValue} category={cat} bind:nameFilter={searchValue}></RestaurantFeed>
             {/if}
         {/each}
     </div>
