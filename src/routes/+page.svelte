@@ -18,7 +18,10 @@
         <div class="text-4xl pb-2 pt-10">Password</div>
         <input bind:value={password} type="text" class="w-full text-black text-2xl p-1 rounded-md">
     </div>
-    <button on:click={login} class="mx-auto p-5 rounded-md text-4xl text-white font-bold bg-gradient-to-b from-yellow-500 to-orange-500 hover:from-orange-500 hover:to-yellow-500 active:scale-[0.97]">
-        Log In
-    </button>
+    <a href="/home">
+        <button on:click={login} class="mx-auto p-5 rounded-md text-4xl text-white font-bold bg-gradient-to-b from-yellow-500 to-orange-500 hover:from-orange-500 hover:to-yellow-500 active:scale-[0.97]">
+            Log In
+        </button>
+    </a>
+        
 </div>
