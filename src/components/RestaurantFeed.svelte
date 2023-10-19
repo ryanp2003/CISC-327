@@ -30,12 +30,14 @@
 </script>
 <div class="w-[100vw] bg-[#CFB3CD] border-t-[2rem] border-[#344055] py-4 px-3 overflow-none">
     <div class="text-3xl text-[#344055] pb-4 font-bold">{category}</div>
-    <div class="flex flex-row gap-10 justify-spread">
+    <div class="flex flex-row gap-10 justify-spread group relative px-20 overflow-scroll overflow-y-hidden">
+        <!-- <button class="w-16 bg-[#888098] text-4xl px-4 rounded-md absolute left-0 h-full z-10 opacity-80"> ⇦ </button> -->
         {#each restaurantFeeds as item}
             {#if (price == "Any" || item.price == price)}  
             <RestaurantFeedItem category={item.category} price={item.price} name="{item.category}_{item.nameID}" image="https://picsum.photos/300"></RestaurantFeedItem>
             {/if}
         {/each}
+        <!-- <button class="w-16 bg-[#888098] text-4xl absolute right-0 h-full opacity-80 hover:text-white"> ⇨ </button> -->
     </div>
 </div>      
 

@@ -22,7 +22,7 @@
 
 </script>
 
-<div class="bg-[#888098]/70 h-[100vh] relative overflow-x-hidden">
+<div class="bg-[#888098]/70 h-[100vh] relative overflow-x-hidden no-scrollbar">
     <Navbar></Navbar>
     <!-- <RestaurantFeedItem category="funniness"></RestaurantFeedItem> -->
     <form class="bg-[#888098] w-full flex flex-row p-5 gap-4 items-center">
@@ -58,3 +58,16 @@
     </div>
 
 </div>
+
+<style>
+    /* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+</style>
