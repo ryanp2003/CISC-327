@@ -41,3 +41,27 @@
     </div>
 </div>      
 
+<style>
+    /* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height:10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #344055;
+    border-radius: 5px;
+}
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+</style>
