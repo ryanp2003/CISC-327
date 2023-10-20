@@ -3,6 +3,7 @@
     let password = ""
 
     const login = () => {
+        console.log("logged in")
         return
     }
 
