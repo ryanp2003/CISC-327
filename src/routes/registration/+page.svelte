@@ -7,7 +7,8 @@
         return
     }
     const signIn = () => {
-        window.location.href = 'http://localhost:5173';
+        // window.location.href = 'http://localhost:5173';
+        return
     }
 
 </script>
@@ -28,8 +29,9 @@
         <button on:click={register} class="p-5 rounded-md text-4xl text-white font-bold bg-gradient-to-b from-yellow-500 to-orange-500 hover:from-orange-500 hover:to-yellow-500 active:scale-[0.97]" style="margin-right: 5px">
             Register
         </button>
-        <button on:click={signIn} class="p-5 rounded-md text-4xl text-white font-bold bg-gradient-to-b from-yellow-500 to-orange-500 hover:from-orange-500 hover:to-yellow-500 active:scale-[0.97]" style="margin-left: 10px">
+        <a href="/"><button on:click={signIn} class="p-5 rounded-md text-4xl text-white font-bold bg-gradient-to-b from-yellow-500 to-orange-500 hover:from-orange-500 hover:to-yellow-500 active:scale-[0.97]" style="margin-left: 10px">
             Sign-In
         </button>
+        </a>
     </div>
 </div>
